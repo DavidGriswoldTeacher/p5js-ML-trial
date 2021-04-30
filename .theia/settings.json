@@ -1,0 +1,10 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".gitignore": true,
+    "global.d.ts": true,
+    "package-lock.json": true,
+    "package.json": true,
+    ".git": true
+  }
+}
