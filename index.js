@@ -1,39 +1,31 @@
-/// @ts-check
 /// <reference path="global.d.ts" />
 "use strict";
-// DO NOT TOUCH THE ABOVE CODE IF YOU WANT THE MAGIC!
-// (You can remove or add an extra slash to the top @ts-check line if you want things to be a bit less strict)
 
-/** This function runs as soon as the p5 library loads */
+var framenum = 0;
+
 function setup() {
-  createCanvas(400, 600);
-  // set up some settings to make everything centered by default
+  createCanvas(64, 64);
   textAlign(CENTER, CENTER);
   rectMode(CENTER);
+
 }
 
 /** This function runs in an infinitely repeating loop */
 function draw() {
-  if (mouseIsPressed) {
-    fill("black");
-    stroke("white");
-  } else {
-    fill("white");
-    stroke("black");
-  }
+  background(255);
+  //generate and save random circle
 
-  ellipse(mouseX, mouseY, 80, 80);
+  save(`images/circle${nf(frameCount, 4, 0)}.png`)
+  background(255);
 
-  writeText();
-}
-/* This function draws our welcome text and its rectangle background */
-function writeText() {
-  fill("pink");
-  stroke("black");
-  rect(width / 2, 50, 300, 50);
-  fill("black");
-  stroke("black");
-  textSize(32);
-  text("Welcome to p5js!", width / 2, 50);
+  // generate a random square
+
+  save(`images/square${nf(frameCount, 4, 0)}.png`)
+  background(255);
+  // generate a random triangle
+
+  save(`images/triangle${nf(frameCount, 4, 0)}.png`)
+  background(255);
 
 }
+
