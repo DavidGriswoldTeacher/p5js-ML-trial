@@ -7,21 +7,16 @@
     "p5": "^0.9.0"
   },
   "devDependencies": {
-    "@types/p5": "^0.9.0",
-    "browser-sync": "^2.26.7"
-  },
-  "scripts": {
-    "serve-gitpod": "browser-sync -f *.html -f *.js --no-open --no-ui --listen 0.0.0.0",
-    "serve-vscode": "browser-sync -f *.html -f *.js"
+    "@types/p5": "^0.9.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/graded-cs-resources/p5js-starter-with-typings.git"
+    "url": "https://github.com/DavidGriswoldTeacher/p5js-ML-trial"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/graded-cs-resources/p5js-starter-with-typings/issues"
+    "url": "https://github.com/graded-cs-resources/p5js-ML-trial/issues"
   },
-  "homepage": "https://github.com/graded-cs-resources/p5js-starter-with-typings#readme"
+  "homepage": "https://github.com/graded-cs-resources/p5js-ML-trial#readme"
 }
