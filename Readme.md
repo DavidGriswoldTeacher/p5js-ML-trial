@@ -1,8 +1,9 @@
 # P5js Starter Project for ML5
+
 Template for trying out some machine learning with P5js!
 
-This is following along with Daniel Shiffman's video at https://thecodingtrain.com/CodingChallenges/158-shape-classifier.html , but the first step (generating shapes) has already been done - there are 300 images each of circles, triangles, and squares in the "data" folder, ready to train! They were generated with processing, just as he does in his video, though I made more images and rotated the squares and triangles more than he did.
+This project is designed to make it possible to use P5JS and ML5 with at least a certain amount of autocomplete in visual studio code, right out of the box.
 
-You need to run `npm install` or use VS Code to run the task `npm:install` from the Terminal menu in order to get p5 and its type settings installed. Make sure you have the Live Server extension installed in VS Code to run a local server for debugging!
+It SHOULD work with no configuration. If something seems wrong with the P5 autocomplete, try `npm upgrade` in the terminal to download the latest version of the P5 type information. If something is wrong with ML5, you may be out of luck; you can find the type definitions in the `types/ml5.d.ts` folder if you want to tweak them, but they are only a rough draft. It should be enough for most purposes.
 
-ML5 is imported in the HTML file using a CDN address, as it seems to have issues on npm right now.
+I have pre-loaded the project with 300 images that are 100x100 pixels each. You can use these to follow along with Daniel Shiffman's video at https://thecodingtrain.com/CodingChallenges/158-shape-classifier.html starting at the second step (training the model), though you'll need to tweak some settings to deal with having 300 images instead of 100, and them being 100x100 instead of 64x64. Or you could just delete the `data` folder and start from scratch!
